@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assets/styles/estilosHome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg azulSura navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{% url 'home' %}">GESTORAPP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'medicos' %}">Pacientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br><br><br>
+    <section>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../../assets/img/paciente1.png"
+                        class="d-block w-100" height="700" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../../assets/img/paciente2.png"
+                        class="d-block w-100" height="700" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../../assets/img/paciente3.png"
+                        class="d-block w-100" height="700" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                </div>
+                <div class="col-12 col-md-12 align-self-center mt-3">
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample">Registrar Paciente</button>
+                    <div class="collapse mt-3" id="collapseExample">
+                        <div class="card card-body">
+                            <form>
+                                <h2>Registro Paciente</h2>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <select class="form-select">
+                                            <option selected>Tipo de Documento</option>
+                                            <option value="1">Cedula de Ciudadania</option>
+                                            <option value="2">Tarjeta de Identidad</option>
+                                            <option value="3">Registro Civil</option>
+                                            <option value="4">Pasaporte</option>
+                                            <option value="5">Cedula de Extranjeria</option>
+                                            <option value="6">Permiso Especial</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1"><i
+                                                    class="bi bi-postcard"></i></span>
+                                            <input type="text" class="form-control"
+                                                placeholder="Documento de Identidad">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1"><i
+                                                    class="bi bi-credit-card-2-front"></i></span>
+                                            <input type="text" class="form-control" placeholder="Nombre y Apellido">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-12 mb-3">
+                                        <select class="form-select">
+                                            <option selected>Regimen</option>
+                                            <option value="1">Contributivo</option>
+                                            <option value="2">Subsidiado</option>
+                                        </select>
+                                        <div class="col-12 mt-3">
+                                            <select class="form-select">
+                                                <option selected>Grupo de Ingreso</option>
+                                                <option value="1">A</option>
+                                                <option value="2">B</option>
+                                                <option value="2">C</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 ">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-cash-stack"></i></span>
+                                            <input type="text" class="form-control" placeholder="Cuota Moderadora">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1"><i
+                                                    class="bi bi-envelope"></i></span>
+                                            <input type="text" class="form-control" placeholder="Correo Electronico">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="col-12 col-md-6">
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="basic-addon1"><i class="bi bi-telephone-plus"></i>
+                                                    </span>
+                                                <input type="text" class="form-control" placeholder="Telefono">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <section>
+        <div class="container my-3">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-5 text-center">
+                
+                <h1 class="fw-bold">Historial <i class="bi bi-file-earmark"></i></i></h1>
+                
+                <p class="wow animate__animated animate__fadeInUp  animate__slow">Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit. Sed, voluptates totam veritatis
+                  ducimus a rem nihil distinctio, neque laboriosam suscipit necessitatibus debitis vero, magni eum officiis
+                  sit in nisi corrupti!
+                  </p>
+              </div>
+            </div>
+          </div>
+        <div class="container my-3">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-5 text-center">
+              
+              <h1 class="fw-bold">Vacunación <i class="bi bi-virus2"></i></h1>
+              <p class="wow animate__animated animate__fadeInUp  animate__slow">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Sed, voluptates totam veritatis
+                ducimus a rem nihil distinctio, neque laboriosam suscipit necessitatibus debitis vero, magni eum officiis
+                sit in nisi corrupti!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur tempora, quos tenetur voluptas deleniti totam quasi ipsam sint provident, suscipit modi aut a quisquam praesentium atque recusandae, harum laboriosam debitis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container my-3">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-5 text-center">
+                
+                <h1 class="fw-bold">Medicamentos <i class="bi bi-capsule"></i></h1>
+                
+                <p class="wow animate__animated animate__fadeInUp  animate__slow">Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit. Sed, voluptates totam veritatis
+                  ducimus a rem nihil distinctio, neque laboriosam suscipit necessitatibus debitis vero, magni eum officiis
+                  sit in nisi corrupti!
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur tempora, quos tenetur voluptas deleniti totam quasi ipsam sint provident, suscipit modi aut a quisquam praesentium atque recusandae, harum laboriosam debitis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, asperiores quibusdam similique soluta laborum ad nihil perspiciatis voluptas commodi iure nostrum beatae necessitatibus ab accusantium perferendis numquam architecto culpa iste!</p>
+              </div>
+            </div>
+          </div>
+          
+      </section>
+    <footer>
+        <div class="container-fluid azulSura2 mt-3 text-center text-white">
+            <div class="row justify-content-center">
+                <div class="col-12 mt-4  col-md-2">
+                    <br>
+                    <h4>Contactanos</h4>
+                    <br>
+                    <h6>Telefono Medellin 604 270 31 04</h6>
+                    <h6>Telefono fuera del Pais 018000900230</h6>
+                    <h6>Correo Electronico elephant@sura.com</h6>
+                </div>
+                <div class="col-12 col-md-2 mt-4 text-center">
+                    <br>
+                    <h4>Servicios</h4>
+                    <br>
+                    <h6>Citas Medicas</h6>
+                    <h6>Registro Pacientes</h6>
+                    <h6>Registro Medicos</h6>
+                </div>
+                <div class="col-12 col-md-3">
+                    <img src="../../assets/img/logo.png"
+                        class="d-block w-100" height="400">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="../helpers/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
