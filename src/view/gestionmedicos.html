@@ -60,13 +60,13 @@
                                     <div class="col-12 col-md-6">
                                         <div class="input-group mb-3">
                                             <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-plus-fill"></i></span>
-                                            <input type="text" class="form-control" placeholder="Nombre completo">
+                                            <input type="text" class="form-control" placeholder="Nombre completo" id="nombres">
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <div class="input-group mb-3">
                                             <span class="input-group-text" id="basic-addon1"><i class="bi bi-postcard"></i></span>
-                                            <input type="text" class="form-control" placeholder="Documento de identidad">
+                                            <input type="text" class="form-control" placeholder="Documento de identidad" id="documento">
                                         </div>
                                     </div>
                                 </div>
@@ -86,14 +86,14 @@
                                     <div class="col-12 col-md-6">
                                         <div class="input-group mb-3">
                                             <span class="input-group-text" id="basic-addon1"><i class="bi bi-credit-card-2-front"></i></i></span>
-                                            <input type="text" class="form-control" placeholder="Registro profesional">
+                                            <input type="text" class="form-control" placeholder="Registro profesional" id="registro">
                                         </div>
 
                                     </div>
                                     <div class="col12 col-md-6">
                                         <div class="input-group mb-3">
                                             <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope-fill"></i></span>
-                                            <input type="text" class="form-control" placeholder="Correo electronico">
+                                            <input type="text" class="form-control" placeholder="Correo electronico" id="correoelectronico">
                                         </div>
                                     </div>
                                 </div>
@@ -134,7 +134,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                                <button id="botonenvio"type="submit" class="btn btn-primary w-100">Enviar</button>
                             </form>
                         </div>
                     </div>
@@ -150,6 +150,8 @@
     <script>
         new WOW().init();
     </script>
+    <script src="../controllers/controladormedicos.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
