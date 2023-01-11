@@ -99,7 +99,7 @@
                                             <span class="input-group-text" id="basic-addon1"><i
                                                     class="bi bi-postcard"></i></span>
                                             <input type="text" class="form-control"
-                                                placeholder="Documento de Identidad">
+                                                placeholder="Documento de Identidad" id="documentopaciente">
                                         </div>
                                     </div>
                                 </div>
@@ -110,7 +110,7 @@
                                         <div class="input-group mb-3">
                                             <span class="input-group-text" id="basic-addon1"><i
                                                     class="bi bi-credit-card-2-front"></i></span>
-                                            <input type="text" class="form-control" placeholder="Nombre y Apellido">
+                                            <input type="text" class="form-control" placeholder="Nombre y Apellido" id="nombrepaciente">
                                         </div>
                                     </div>
                                 </div>
@@ -137,7 +137,7 @@
                                     <div class="col-12 ">
                                         <div class="input-group mb-3">
                                             <span class="input-group-text" id="basic-addon1"><i class="bi bi-cash-stack"></i></span>
-                                            <input type="text" class="form-control" placeholder="Cuota Moderadora">
+                                            <input type="text" class="form-control" placeholder="Cuota Moderadora" id="cuotamoderadorapaciente">
                                         </div>
                                     </div>
                                 </div>
@@ -147,7 +147,7 @@
                                         <div class="input-group mb-3">
                                             <span class="input-group-text" id="basic-addon1"><i
                                                     class="bi bi-envelope"></i></span>
-                                            <input type="text" class="form-control" placeholder="Correo Electronico">
+                                            <input type="text" class="form-control" placeholder="Correo Electronico" id="correopaciente">
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6">
@@ -155,12 +155,12 @@
                                             <div class="input-group mb-3">
                                                 <span class="input-group-text" id="basic-addon1"><i class="bi bi-telephone-plus"></i>
                                                     </span>
-                                                <input type="text" class="form-control" placeholder="Telefono">
+                                                <input type="text" class="form-control" placeholder="Telefono" id="telefonopaciente">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                                <button id="botonenviopaciente" type="submit" class="btn btn-primary w-100">Enviar</button>
                         </div>
                         </form>
                     </div>
@@ -247,6 +247,8 @@
     <script>
         new WOW().init();
     </script>
+    <script src="../controllers/controladorpacientes.js" type="module"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
