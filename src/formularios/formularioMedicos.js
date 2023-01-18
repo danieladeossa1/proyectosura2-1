@@ -15,7 +15,7 @@ export function capturarDatos(etiquetaNombre,etiquetaDocumento,etiquetaRegistro,
     //debemos almacenar todos lo valores del formulario en una sola variable
     //Objeto=permite alamcenar varios datos en 1 solo espacio de memoria
     let datosFormularioMedico={
-        nombre:nombreMedico,
+        nombres:nombreMedico,
         documento:documentoMedico,
         especialidad:especialidadMedicina,
         regsitro:registroMedico,
@@ -23,7 +23,8 @@ export function capturarDatos(etiquetaNombre,etiquetaDocumento,etiquetaRegistro,
         sede:sedeMedico,
         Horario:horarioMedico,
         descripcion:descripcionMedico,
-        foto:fotoMedico,
+        fotografia:fotoMedico,
+        
     }
     validarFormulario(datosFormularioMedico)
     
